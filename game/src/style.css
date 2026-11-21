@@ -1,0 +1,39 @@
+/* Beda Gambar! — page chrome around the canvas: dark stage, centred game, quiet help line. */
+html, body {
+  margin: 0;
+  min-height: 100%;
+  background: #10142a;
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+}
+.stage {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  box-sizing: border-box;
+}
+#game {
+  width: min(100%, 1280px);
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.55);
+  touch-action: none;
+  cursor: crosshair;
+}
+.help {
+  color: #8a91b5;
+  font-size: 14px;
+  margin: 10px 0 0;
+  text-align: center;
+}
+#status {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
